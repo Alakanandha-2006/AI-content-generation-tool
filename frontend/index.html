@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Content Generation Tool</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>🤖 AI Content Generation Tool</h1>
+
+        <p style="text-align:center; margin-bottom:20px; color:#555;">
+            Generate summaries, emails, rewritten text, articles, creative writing, and study notes using AI.
+        </p>
+
+        <label for="task">Select Task</label>
+
+        <select id="task">
+
+            <option value="summary">📝 Summarize Notes</option>
+
+            <option value="email">📧 Generate Email</option>
+
+            <option value="rewrite">✍ Rewrite Text</option>
+
+            <option value="article">📄 Generate Article</option>
+
+            <option value="creative">🎨 Creative Writing</option>
+
+            <option value="notes">📚 Study Notes</option>
+
+        </select>
+
+        <label for="inputText">Enter Your Text</label>
+
+        <textarea
+            id="inputText"
+            placeholder="Type or paste your content here..."
+        ></textarea>
+
+        <button onclick="generateContent()">
+            🚀 Generate
+        </button>
+
+        <button onclick="clearText()">
+            🗑 Clear
+        </button>
+
+        <h2>Generated Output</h2>
+
+        <div id="result">
+            Your generated content will appear here...
+        </div>
+
+        <br>
+
+        <button onclick="copyOutput()">
+            📋 Copy Output
+        </button>
+
+        <button onclick="downloadOutput()">
+            💾 Download Output
+        </button>
+
+        <div class="footer">
+
+            <hr style="margin:25px 0;">
+
+            <p>
+                AI Content Generation Tool
+            </p>
+
+            <p>
+                Developed using HTML, CSS, JavaScript, FastAPI & AI
+            </p>
+
+        </div>
+
+    </div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
