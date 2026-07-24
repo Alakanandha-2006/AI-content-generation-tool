@@ -19,7 +19,7 @@ async function generateContent() {
 
     try {
 
-        const response = await fetch("https://ai-content-generation-tool.onrender.com", {
+        const response = await fetch(""https://ai-content-generation-tool-3.onrender.com/generate", {
 
             method: "POST",
 
